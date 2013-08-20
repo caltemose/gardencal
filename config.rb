@@ -2,22 +2,15 @@
 require 'slim'
 set :slim, :pretty => true
 
-# some site-wide variables
-set :site_title, "Site Title"
-set :site_url, "site.url"
-set :site_description, "Site description."
-set :site_keywords, "site, key, words"
-
 # primary asset paths
 set :source, "source"
 set :css_dir, "assets/css"
 set :js_dir, "assets/js"
 set :images_dir, "assets/img"
 set :fonts_dir, "assets/fonts"
-set :partials_dir, "templates/partials"
 set :layouts_dir, "templates"
+set :layout, "default"
 #set :build_dir, "build"
-set :layout, "default"   # default layout name
 
 # markdown options
 set :markdown, :tables => true, :autolink => true, :fenced_code_blocks => true
@@ -26,8 +19,6 @@ set :markdown, :tables => true, :autolink => true, :fenced_code_blocks => true
 ::Compass.configuration.sass_options = { :line_comments => false }
 
 activate :livereload
-
-# convert page.html.md to page/index.html
 activate :directory_indexes
 
 # Build config

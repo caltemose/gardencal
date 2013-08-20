@@ -1,4 +1,28 @@
-= partial 'header'
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width"
 
-== yield
+    - desc = "Site description. "
+    - if data.page.desc
+      - desc += data.page.desc
+    meta name="description" content="#{desc}"
+
+    - if data.page.keywords
+      meta name="keywords" content="#{data.page.keywords}"
+
+    - pagetitle = 'Site Title'
+    - if data.page.title
+      - pagetitle += ': ' + data.page.title
+    title == pagetitle
+
+    == stylesheet_link_tag "main"
+
+  body
+
+    article
+      
+      == yield
 

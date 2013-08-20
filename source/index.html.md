@@ -1,7 +1,7 @@
 ---
-title: Basic Site
+title: Welcome
 ---
 
-# Middleman Basic Site with Slim, SASS and CoffeeScript
+# Welcome
 
-This page content is written in Markdown. The templating language is Slim.
+Home page content.
