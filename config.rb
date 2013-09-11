@@ -8,7 +8,7 @@ set :css_dir, "assets/css"
 set :js_dir, "assets/js"
 set :images_dir, "assets/img"
 set :fonts_dir, "assets/fonts"
-set :layouts_dir, "templates"
+set :layouts_dir, "layouts"
 set :layout, "default"
 #set :build_dir, "build"
 

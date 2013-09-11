@@ -133,7 +133,7 @@ media query for larger devices
 	
 	body { font-size: 21px; }
 
-	body > article, body > footer {
+	body > section, body > footer {
 		width: 100%;
 		max-width: $maxWidthDesktopRem;
 		margin-left: auto;

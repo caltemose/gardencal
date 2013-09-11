@@ -5,10 +5,8 @@ html
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
     meta name="viewport" content="width=device-width"
 
-    - desc = "Site description. "
     - if data.page.desc
-      - desc += data.page.desc
-    meta name="description" content="#{desc}"
+      meta name="description" content="#{data.page.desc}"
 
     - if data.page.keywords
       meta name="keywords" content="#{data.page.keywords}"
@@ -22,7 +20,7 @@ html
 
   body
 
-    article
+    section
       
       == yield
 
