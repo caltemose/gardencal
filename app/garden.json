@@ -1,0 +1,47 @@
+{
+  "location": "Atlanta",
+  "monthlyNotes": [
+    "january notes",
+    "feb notes",
+    "mar notes",
+    "april notes",
+    "may notes",
+    "june notes",
+    "july notes",
+    "august notes",
+    "sept notes",
+    "oct notes",
+    "nov notes",
+    "dec notes"
+  ],
+  "crops": [
+    {
+      "name": "beans (bush, pole)",
+      "maturation": 60,
+      "plantings": [
+        {
+          "start": "04-15",
+          "end": "06-01"
+        },
+        {
+          "start": "07-10",
+          "end": "08-01"
+        }
+      ]
+    },
+    {
+      "name": "beets",
+      "maturation": 60,
+      "plantings": [
+        {
+          "start": "08-01",
+          "end": "09-20"
+        },
+        {
+          "start": "02-15",
+          "end": "04-01"
+        }
+      ]
+    }
+  ]
+}
