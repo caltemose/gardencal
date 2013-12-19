@@ -1,9 +1,19 @@
 @import "reset"
 
+$topHeight: 6rem
+$infoWidth: 20rem
+$monthWidth: 4rem
+$rowHeight: 5rem // persist this to the JS file
+$cropWidth: 5rem
+$plantingWidth: 1rem
+
 body
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
   color: #333
   border: 0
+
+h2, h3
+  font-size: 1em
 
 ul
   list-style-type: none
@@ -21,34 +31,76 @@ li
 
   & > .calendar 
     display: inline-block
-    width: 20em
-    background: #fef
+    width: $infoWidth + $monthWidth
+
+    header
+      position: relative
+
+      h2
+        display: inline-block
+        margin: 0
+        padding: 3rem 0 0
+        vertical-align: bottom
+        height: $topHeight
+        background: #eee
+
+      h2:first-child
+        width: $infoWidth
+        padding-left: 0.5em
+
+      h2:nth-child(2)
+        width: $monthWidth
+        position: absolute
+        right: 0
 
     li 
       position: relative
-      height: 4em
-      border-bottom: 2px solid white
+      height: $rowHeight
+      border-bottom: 1px solid black
 
       h3 
         position: absolute
         right: 0
-        width: 3em
+        width: $monthWidth
         margin: 0
-        padding: 0
+        padding: 1.3em 0 0
+        text-align: center
 
       article 
         position: absolute
-        width: 16em
-        top: 0
-        left: 0
+        width: $infoWidth
+        top: 0.5rem
+        left: 0.5rem
+        font-size: 0.8em
+
+    li:first-child
+      border-top: 1px solid black
 
   & > .crops 
     display: inline-block
     vertical-align: top
 
     & > li 
+      position: relative
       display: inline-block
-      width: 5em
+      width: $cropWidth
+      height: $topHeight + $rowHeight * 12
       margin-right: 0.2em
-      background: #eee
+      padding: 0
+      vertical-align: top
+      background: #fff
+
+      h3
+        margin-top: 0
+        height: $topHeight
+        background: #eee
+
+      span 
+        position: absolute
+        display: block
+        width: $plantingWidth
+        background: #c3a96e
+
+      span.harvest
+        background: #5f9e4c
 

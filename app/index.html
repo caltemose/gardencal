@@ -24,41 +24,12 @@
     <![endif]-->
 
     <article class="gardencal">
-      <section class="calendar">
-        <ul>
-          <li>
-            <h3>Jan</h3>
-            <article>
-              here is a bunch of January markup
-            </article>
-          </li>
-          <li>
-            <h3>Jan</h3>
-            <article>
-              here is a bunch of January markup
-            </article>
-          </li>
-        </ul>
-      </section>
-      <ul class="crops">
-        <li>
-          <h3>Beans</h3>
-          <ul>
-            <li>&nbsp;</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Peas</h3>
-          <ul>
-            <li>&nbsp;</li>
-          </ul>
-        </li>
-      </ul>
     </article>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/mustache/mustache.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -66,5 +37,28 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+
+    <script id="template" type="text/x-handlebars-template">
+      <section class="calendar">
+        <header>
+          <h2>Info</h2>
+          <h2>Month</h2>
+        </header>
+        <ul>{{#monthlyNotes}}
+          <li>
+            <h3>{{month}}</h3>
+            <article>
+              {{notes}}
+            </article>
+          </li>{{/monthlyNotes}}
+        </ul>
+      </section>
+      <ul class="crops">{{#crops}}
+        <li data-crop="{{name}}">
+          <h3>{{name}}</h3>
+        </li>{{/crops}}
+      </ul>
+    </script>
+
 </body>
 </html>
