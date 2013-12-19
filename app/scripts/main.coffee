@@ -22,17 +22,50 @@ gardencal = (($) ->
         i = 0
         rowHeight = 5
         $(this.plantings).each ->
-          # PLANTING
-          # dates are MM-DD
+          # DATES
           startSplit = this.start.split '-'
           endSplit = this.end.split '-'
+
+          # PLANTING
           top = (startSplit[0]-1 + startSplit[1]/30)*rowHeight
           bottom = (endSplit[0]-1 + endSplit[1]/30)*rowHeight
-          $(match).append '<span class="seed" style="left: ' + (i+1) + 'rem; top:' + (top+topPad) + 'rem; height: ' + (bottom - top) + 'rem">&nbsp;</span>'
+          span =  $('<span class="seed">&nbsp;</span>').appendTo match
+          span.data 'start', this.start
+          span.data 'end', this.end
+          span.css 'left', (i+1) + 'rem'
+          span.css 'top', (top+topPad) + 'rem'
+          span.css 'height', (bottom-top) + 'rem'
+          span.qtip
+            content: 'Seed: ' + this.start + ' to ' + this.end
+            position:
+              my: 'center left'
+              at: 'center right'
+            show:
+              delay: 0
+            hide:
+              delay: 0
+
           # HARVEST
           harvestTop = top + (maturation/30)*rowHeight
           harvestBottom = bottom + (maturation/30)*rowHeight
-          $(match).append '<span class="harvest" style="left: ' + (i+1) + 'rem; top: ' + (harvestTop+topPad) + 'rem; height: ' + (bottom-top) + 'rem">&nbsp;</span>'
+          span =  $('<span class="harvest">&nbsp;</span>').appendTo match
+          span.data 'start', this.start
+          span.data 'end', this.end
+          span.css 'left', (i+1) + 'rem'
+          span.css 'top', (harvestTop+topPad) + 'rem'
+          span.css 'height', (bottom-top) + 'rem'
+          span.qtip
+            content: 'Harvest: ' + this.start + ' to ' + this.end
+            position:
+              my: 'center left'
+              at: 'center right'
+            show:
+              delay: 0
+            hide:
+              delay: 0          
+
+          #$(match).append '<span class="harvest" style="left: ' + (i+1) + 'rem; top: ' + (harvestTop+topPad) + 'rem; height: ' + (bottom-top) + 'rem">&nbsp;</span>'
+
           i++
 
 
