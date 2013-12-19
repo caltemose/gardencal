@@ -18,6 +18,9 @@ set :markdown, :tables => true, :autolink => true, :fenced_code_blocks => true
 # turn off SASS line comments
 ::Compass.configuration.sass_options = { :line_comments => false }
 
+page '/', :layout => false
+
+
 activate :livereload
 activate :directory_indexes
 

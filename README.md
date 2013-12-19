@@ -1,4 +1,4 @@
-middleman-slim-coffee-basic
+Garden Calendar
 ===========================
 
-Middleman basic template with Slim and CoffeeScript support.
+A garden calendar single page viewer application showing crop planting schedule and other useful information.
