@@ -19,6 +19,7 @@
       "name": "arugula",
       "img": "img/crops/arugula.png",
       "maturation": 30,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "02-15",
@@ -31,13 +32,30 @@
       ]
     },
     {
-      "name": "lettuce",
-      "img": "img/crops/lettuce.speckled.png",
-      "maturation": 70,
+      "name": "spinach",
+      "img": "img/crops/spinach.png",
+      "maturation": 45,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "01-15",
-          "end": "03-01"
+          "end": "03-15"
+        },
+        {
+          "start": "09-01",
+          "end": "10-15"
+        }
+      ]
+    },
+    {
+      "name": "lettuce",
+      "img": "img/crops/lettuce.speckled.png",
+      "maturation": 70,
+      "plantingType": "seed",
+      "plantings": [
+        {
+          "start": "02-01",
+          "end": "03-15"
         },
         {
           "start": "09-01",
@@ -49,9 +67,10 @@
       "name": "peas",
       "img": "img/crops/peas.png",
       "maturation": 70,
+      "plantingType": "seed",
       "plantings": [
         {
-          "start": "02-01",
+          "start": "02-10",
           "end": "03-01"
         }
       ]
@@ -60,6 +79,7 @@
       "name": "beans",
       "img": "img/crops/beans.runner.png",
       "maturation": 60,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "04-15",
@@ -75,6 +95,7 @@
       "name": "cucumber",
       "img": "img/crops/cucumber.japanese.png",
       "maturation": 60,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "04-01",
@@ -90,6 +111,7 @@
       "name": "eggplant",
       "img": "img/crops/eggplant.png",
       "maturation": 80,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "04-01",
@@ -105,6 +127,7 @@
       "name": "tomato",
       "img": "img/crops/tomato.beefsteak.png",
       "maturation": 80,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "04-15",
@@ -120,6 +143,7 @@
       "name": "beets",
       "img": "img/crops/beet.png",
       "maturation": 60,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "02-15",
@@ -135,6 +159,7 @@
       "name": "carrots",
       "img": "img/crops/carrot.yellow.png",
       "maturation": 75,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "02-01",
@@ -147,13 +172,26 @@
       ]
     },
     {
+      "name": "okra",
+      "img": "img/crops/okra.png",
+      "maturation": 60,
+      "plantingType": "seed",
+      "plantings": [
+        {
+          "start": "04-15",
+          "end": "06-01"
+        }
+      ]
+    },
+    {
       "name": "radish",
       "img": "img/crops/radish.png",
       "maturation": 30,
+      "plantingType": "seed",
       "plantings": [
         {
-          "start": "01-15",
-          "end": "04-01"
+          "start": "01-26",
+          "end": "02-15"
         },
         {
           "start": "09-01",
@@ -165,6 +203,7 @@
       "name": "fava",
       "img": "img/crops/fava.png",
       "maturation": 160,
+      "plantingType": "seed",
       "plantings": [
         {
           "start": "10-01",

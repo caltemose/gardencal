@@ -38,7 +38,7 @@ gardencal = (($) ->
           span.css 'top', (top+topPad) + 'rem'
           span.css 'height', (bottom-top) + 'rem'
           span.qtip
-            content: 'Seed: ' + this.start + ' to ' + this.end
+            content: 'Plant: ' + this.start + ' to ' + this.end
             position:
               my: 'center left'
               at: 'center right'
