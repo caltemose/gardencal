@@ -11,8 +11,8 @@
     {"month":"aug", "notes": "Plant: Irish potatoes, cukes, snap beans; Start: broccoli, cabbage, cauliflower, collards, kale, onions"},
     {"month":"sep", "notes": "Plant/transplant: beets, broccoli, cabbage, carrots, collards, lettuce, mustard, onions, radishes, spinach, turnips"},
     {"month":"oct", "notes": "Plant/transplant: beets, broccoli, cabbage, carrots, collards, lettuce, mustard, onions, radishes, spinach, turnips"},
-    {"month":"nov", "notes": "spread manure and leaves and turn under dirt; lime if needed; save leaves; take inventory and debrief"},
-    {"month":"dec", "notes": "spread manure and leaves and turn under dirt; lime if needed; save leaves; take inventory and debrief"}
+    {"month":"nov", "notes": "Spread manure and leaves and turn under dirt; Lime if needed; Save leaves; Take inventory and debrief"},
+    {"month":"dec", "notes": "Spread manure and leaves and turn under dirt; Lime if needed; Save leaves; Take inventory and debrief"}
   ],
   "crops": [
    {
