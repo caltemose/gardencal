@@ -5,14 +5,14 @@
     {"month":"feb", "notes": "Prepare the garden; Plant: carrots, collards, lettuce, mustard, english peas, irish potatoes, radishes, spinach, turnips, rapini; Mid/end of month start seeds: herbs, tomatoes, peppers, cukes"},
     {"month":"mar", "notes": "Plant #2: turnips, radishes, mustard, spring onions; Thin seedlings if needed; Prep rows for warm-season vegetables planted in April"},
     {"month":"apr", "notes": "Plant: limas (2 rows for pollination), melons, cukes, eggplant, okra, peppers, squash, tomatoes; Plant tender herbs"},
-    {"month":"may", "notes": "may notes"},
-    {"month":"jun", "notes": "june notes"},
-    {"month":"jul", "notes": "july notes"},
-    {"month":"aug", "notes": "august notes"},
-    {"month":"sep", "notes": "sept notes"},
-    {"month":"oct", "notes": "oct notes"},
-    {"month":"nov", "notes": "nov notes"},
-    {"month":"dec", "notes": "dec notes"}
+    {"month":"may", "notes": "Plant #3: limas, squash; Get mulch for tomatoes, peppers, limas, etc before dry season"},
+    {"month":"jun", "notes": "Harvest & Preserve; Plant sweet potatoes"},
+    {"month":"jul", "notes": "Plan fall garden; Fallow soil; Clean up harvested plants; Plant by July 20: tomatoes, okra, limas, cukes, squash; Water deeply and less often"},
+    {"month":"aug", "notes": "Plant: Irish potatoes, cukes, snap beans; Start: broccoli, cabbage, cauliflower, collards, kale, onions"},
+    {"month":"sep", "notes": "Plant/transplant: beets, broccoli, cabbage, carrots, collards, lettuce, mustard, onions, radishes, spinach, turnips"},
+    {"month":"oct", "notes": "Plant/transplant: beets, broccoli, cabbage, carrots, collards, lettuce, mustard, onions, radishes, spinach, turnips"},
+    {"month":"nov", "notes": "spread manure and leaves and turn under dirt; lime if needed; save leaves; take inventory and debrief"},
+    {"month":"dec", "notes": "spread manure and leaves and turn under dirt; lime if needed; save leaves; take inventory and debrief"}
   ],
   "crops": [
    {
