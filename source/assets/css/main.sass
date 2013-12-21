@@ -7,8 +7,9 @@ $rowHeight: 5rem // persist this to the JS file
 $cropWidth: 5rem
 $plantingWidth: 1rem
 
-$plantingColor: #e7e959
-$harvestColor: #3aa21a
+$seedColor: #fff200
+$plantingColor: #8dc63f
+$harvestColor: #007236
 
 body
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -127,9 +128,14 @@ li
         width: $plantingWidth - 0.1
 
       span.seed
+        background: $seedColor
+
+      span.plant
         background: $plantingColor
+        left: 1rem 
 
       span.harvest
         background: $harvestColor
-        opacity: 0.5
+        left: 2rem
+        
 
