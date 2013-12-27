@@ -15,17 +15,17 @@
     {"month":"dec", "notes": "Spread manure and leaves and turn under dirt; Lime if needed; Save leaves; Take inventory and debrief"}
   ],
   "crops": [
-   {
-      "name": "arugula",
-      "img": "img/crops/arugula.png",
+    {
+      "name": "potatoes",
+      "img": "img/crops/potato.new.png",
       "plantings": {
         "plant": [
-          ["02-15", "05-01"],
-          ["08-01", "10-01"]
+          ["01-15", "03-01"],
+          ["08-01", "08-15"]
         ],
         "harvest": {
-          "after": 30,
-          "for": 15
+          "after": 80,
+          "for": 30
         }
       }
     },
@@ -40,6 +40,48 @@
         "harvest": {
           "after": 45,
           "for": 20
+        }
+      }
+    },
+    {
+      "name": "radish",
+      "img": "img/crops/radish.png",
+      "plantings": {
+        "plant": [
+          ["01-25", "02-15"],
+          ["09-01", "10-15"]
+        ],
+        "harvest": {
+          "after": 30,
+          "for": 30
+        }
+      }
+    },
+    {
+      "name": "carrots",
+      "img": "img/crops/carrot.yellow.png",
+      "plantings": {
+        "plant": [
+          ["02-01", "03-20"],
+          ["08-01", "09-15"]
+        ],
+        "harvest": {
+          "after": 75,
+          "for": 30
+        }
+      }
+    },
+    {
+      "name": "arugula",
+      "img": "img/crops/arugula.png",
+      "plantings": {
+        "plant": [
+          ["02-15", "05-01"],
+          ["08-01", "10-01"]
+        ],
+        "harvest": {
+          "after": 30,
+          "for": 15
         }
       }
     },
@@ -67,6 +109,20 @@
         "harvest": {
           "after": 70,
           "for": 15
+        }
+      }
+    },
+    {
+      "name": "beets",
+      "img": "img/crops/beet.png",
+      "plantings": {
+        "plant": [
+          ["03-01", "04-01"],
+          ["06-01", "08-01"]
+        ],
+        "harvest": {
+          "after": 60,
+          "for": 20
         }
       }
     },
@@ -114,6 +170,20 @@
       }
     },
     {
+      "name": "pepper",
+      "img": "img/crops/pepper.bell.png",
+      "plantings": {
+        "seedlings": 45,
+        "plant": [
+          ["04-15", "06-01"]
+        ],
+        "harvest": {
+          "after": 80,
+          "for": 45
+        }
+      }
+    },
+    {
       "name": "tomato",
       "img": "img/crops/tomato.beefsteak.png",
       "plantings": {
@@ -129,34 +199,6 @@
       }
     },
     {
-      "name": "beets",
-      "img": "img/crops/beet.png",
-      "plantings": {
-        "plant": [
-          ["03-01", "04-01"],
-          ["06-01", "08-01"]
-        ],
-        "harvest": {
-          "after": 60,
-          "for": 20
-        }
-      }
-    },
-    {
-      "name": "carrots",
-      "img": "img/crops/carrot.yellow.png",
-      "plantings": {
-        "plant": [
-          ["02-01", "03-20"],
-          ["08-01", "09-15"]
-        ],
-        "harvest": {
-          "after": 75,
-          "for": 30
-        }
-      }
-    },
-    {
       "name": "okra",
       "img": "img/crops/okra.png",
       "plantings": {
@@ -165,20 +207,6 @@
         ],
         "harvest": {
           "after": 60,
-          "for": 30
-        }
-      }
-    },
-    {
-      "name": "radish",
-      "img": "img/crops/radish.png",
-      "plantings": {
-        "plant": [
-          ["01-25", "02-15"],
-          ["09-01", "10-15"]
-        ],
-        "harvest": {
-          "after": 30,
           "for": 30
         }
       }
