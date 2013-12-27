@@ -199,6 +199,19 @@
       }
     },
     {
+      "name": "squash",
+      "img": "img/crops/squash.kuri.png",
+      "plantings": {
+        "plant": [
+          ["04-15", "08-01"]
+        ],
+        "harvest": {
+          "after": 110,
+          "for": 20
+        }
+      }
+    },
+    {
       "name": "okra",
       "img": "img/crops/okra.png",
       "plantings": {
