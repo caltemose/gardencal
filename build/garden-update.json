@@ -43,58 +43,6 @@
       ]
     },
     {
-      "name": "kale",
-      "img": "img/crops/kale.png",
-      "plantings": [
-        {
-          "plant": {
-            "start": "01-15",
-            "stop": "03-15"
-          },
-          "harvest": {
-            "start": "04-01",
-            "stop": "06-15"
-          }
-        },
-        {
-          "plant": {
-            "start": "08-15",
-            "stop": "09-01"
-          },
-          "harvest": {
-            "start": "11-01",
-            "stop": "11-15"
-          }
-        }
-      ]
-    },
-    {
-      "name": "chard",
-      "img": "img/crops/chard.png",
-      "plantings": [
-        {
-          "plant": {
-            "start": "03-01",
-            "stop": "04-15"
-          },
-          "harvest": {
-            "start": "06-01",
-            "stop": "11-15"
-          }
-        },
-        {
-          "plant": {
-            "start": "08-15",
-            "stop": "09-01"
-          },
-          "harvest": {
-            "start": "02-01",
-            "stop": "06-01"
-          }
-        }
-      ]
-    },
-    {
       "name": "spinach",
       "img": "img/crops/spinach.png",
       "plantings": [
@@ -293,22 +241,6 @@
       ]
     },
     {
-      "name": "fennel",
-      "img": "img/crops/fennel.png",
-      "plantings": [
-        {
-          "plant": {
-            "start": "04-15",
-            "stop": "05-15"
-          },
-          "harvest": {
-            "start": "08-01",
-            "stop": "10-01"
-          }
-        }
-      ]
-    },
-    {
       "name": "cucumber",
       "img": "img/crops/cucumber.japanese.png",
       "plantings": [
@@ -455,10 +387,6 @@
       "img": "img/crops/broccoli.png",
       "plantings": [
         {
-          "plant": {
-            "start": "12-01",
-            "stop": "12-31"
-          },
           "transplant": {
             "start": "02-15",
             "stop": "03-15"
@@ -466,82 +394,6 @@
           "harvest": {
             "start": "05-01",
             "stop": "06-15"
-          }
-        }
-      ]
-    },
-    {
-      "name": "cauliflower",
-      "img": "img/crops/cauliflower.purple.png",
-      "plantings": [
-        {
-          "plant": {
-            "start": "12-01",
-            "stop": "12-31"
-          },
-          "transplant": {
-            "start": "02-15",
-            "stop": "03-15"
-          },
-          "harvest": {
-            "start": "05-01",
-            "stop": "06-15"
-          }
-        }
-      ]
-    },
-    {
-      "name": "cabbage",
-      "img": "img/crops/cabbage.savoy.png",
-      "plantings": [
-        {
-          "plant": {
-            "start": "12-01",
-            "stop": "12-31"
-          },
-          "transplant": {
-            "start": "02-15",
-            "stop": "03-15"
-          },
-          "harvest": {
-            "start": "05-01",
-            "stop": "06-15"
-          }
-        }
-      ]
-    },
-    {
-      "name": "brussels",
-      "img": "img/crops/brusselsprouts.png",
-      "plantings": [
-        {
-          "plant": {
-            "start": "12-01",
-            "stop": "12-31"
-          },
-          "transplant": {
-            "start": "02-15",
-            "stop": "03-15"
-          },
-          "harvest": {
-            "start": "05-01",
-            "stop": "06-15"
-          }
-        }
-      ]
-    },
-    {
-      "name": "onion",
-      "img": "img/crops/onion.cippolini.png",
-      "plantings": [
-        {
-          "transplant": {
-            "start": "01-01",
-            "stop": "03-15"
-          },
-          "harvest": {
-            "start": "06-01",
-            "stop": "09-15"
           }
         }
       ]

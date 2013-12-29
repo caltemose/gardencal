@@ -37,7 +37,7 @@ gardencal = (($) ->
         drawPlantings this, match
 
     # set the .crops container width so the list items don't wrap
-    crops.css('width', data.crops.length*5.2+'rem')
+    crops.css('width', data.crops.length*6+'rem')
 
   drawPlantings = (data, container) ->
     #drawPlanting range, container, data for range in data.plantings.plant
