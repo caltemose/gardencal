@@ -8,6 +8,7 @@ gardencal = (($) ->
 
   #containers
   crops = false
+  cropItems = false
 
   initialize = ->
     console.log "(gardencal) initialized"
@@ -21,25 +22,30 @@ gardencal = (($) ->
   draw = (data)->
     # render calendar/info section and crop headers
     $('.gardencal').html Mustache.render($('#template').html(), data)
-    crops = $ '.crops'
+    cropContainer = $ '.crops'
     # grab the crops list items
-    items = $ '.crops li'
+    cropItems = $ '.crops > li'
+
     # for all crops...
     $(data.crops).each ->
       cropName = this.name
       match = undefined
+
       # loop through all crop <li> to find the one that matches this crop data
-      $(items).each ->
+      $(cropItems).each ->
         if $(this).attr('data-crop') is cropName
           match = this
       # with the matched <li>...
       if match
-        drawPlantings this, match
+        drawCrop this, match
 
     # set the .crops container width so the list items don't wrap
-    crops.css('width', data.crops.length*6+'rem')
+    cropContainer.css('width', data.crops.length*6+'rem')
 
-  drawPlantings = (data, container) ->
+  drawCrop = (data, container) ->
+    $('h3 > a', container).click ->
+      gardencal.toggleMe container
+
     #drawPlanting range, container, data for range in data.plantings.plant
     drawPlanting planting, container for planting in data.plantings
 
@@ -85,10 +91,19 @@ gardencal = (($) ->
       hide:
         delay: 0
 
-
+  toggleAllButMe = (crop) ->
+    if $(cropItems[0]).is(':visible') and $(cropItems[1]).is(':visible')
+      cropItems.hide()
+      $(crop).show()
+      $(window).scrollLeft(0)
+    else
+      cropItems.show()
 
 
   init: initialize
+
+  toggleMe: toggleAllButMe
+
 )(jQuery)
 $ ->
   gardencal.init()
