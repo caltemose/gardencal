@@ -15,201 +15,227 @@
     {"month":"dec", "notes": "Spread manure and leaves and turn under dirt; Lime if needed; Save leaves; Take inventory and debrief"}
   ],
   "crops": [
-   {
-      "name": "arugula",
-      "img": "img/crops/arugula.png",
-      "maturation": 30,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "02-15",
-          "end": "05-01"
-        },
-        {
-          "start": "08-01",
-          "end": "10-01"
+    {
+      "name": "potatoes",
+      "img": "img/crops/potato.new.png",
+      "plantings": {
+        "plant": [
+          ["01-15", "03-01"],
+          ["08-01", "08-15"]
+        ],
+        "harvest": {
+          "after": 80,
+          "for": 30
         }
-      ]
+      }
     },
     {
       "name": "spinach",
       "img": "img/crops/spinach.png",
-      "maturation": 45,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "01-15",
-          "end": "03-15"
-        },
-        {
-          "start": "09-01",
-          "end": "10-15"
+      "plantings": {
+        "plant": [
+          ["01-15", "03-15"],
+          ["09-01", "10-15"]
+        ],
+        "harvest": {
+          "after": 45,
+          "for": 20
         }
-      ]
-    },
-    {
-      "name": "lettuce",
-      "img": "img/crops/lettuce.speckled.png",
-      "maturation": 70,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "02-01",
-          "end": "03-15"
-        },
-        {
-          "start": "09-01",
-          "end": "10-01"
-        }
-      ]
-    },
-    {
-      "name": "peas",
-      "img": "img/crops/peas.png",
-      "maturation": 70,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "02-10",
-          "end": "03-01"
-        }
-      ]
-    },
-    {
-      "name": "beans",
-      "img": "img/crops/beans.runner.png",
-      "maturation": 60,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "04-15",
-          "end": "06-01"
-        },
-        {
-          "start": "07-10",
-          "end": "08-01"
-        }
-      ]
-    },
-    {
-      "name": "cucumber",
-      "img": "img/crops/cucumber.japanese.png",
-      "maturation": 60,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "04-01",
-          "end": "05-15"
-        },
-        {
-          "start": "08-15",
-          "end": "09-01"
-        }
-      ]
-    },
-    {
-      "name": "eggplant",
-      "img": "img/crops/eggplant.png",
-      "maturation": 80,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "04-01",
-          "end": "05-15"
-        },
-        {
-          "start": "07-10",
-          "end": "07-15"
-        }
-      ]
-    },
-    {
-      "name": "tomato",
-      "img": "img/crops/tomato.beefsteak.png",
-      "maturation": 80,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "04-15",
-          "end": "05-01"
-        },
-        {
-          "start": "06-01",
-          "end": "08-01"
-        }
-      ]
-    },
-    {
-      "name": "beets",
-      "img": "img/crops/beet.png",
-      "maturation": 60,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "02-15",
-          "end": "04-01"
-        },
-        {
-          "start": "08-01",
-          "end": "09-20"
-        }
-      ]
-    },
-    {
-      "name": "carrots",
-      "img": "img/crops/carrot.yellow.png",
-      "maturation": 75,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "02-01",
-          "end": "03-20"
-        },
-        {
-          "start": "08-01",
-          "end": "09-15"
-        }
-      ]
-    },
-    {
-      "name": "okra",
-      "img": "img/crops/okra.png",
-      "maturation": 60,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "04-15",
-          "end": "06-01"
-        }
-      ]
+      }
     },
     {
       "name": "radish",
       "img": "img/crops/radish.png",
-      "maturation": 30,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "01-26",
-          "end": "02-15"
-        },
-        {
-          "start": "09-01",
-          "end": "10-15"
+      "plantings": {
+        "plant": [
+          ["01-25", "02-15"],
+          ["09-01", "10-15"]
+        ],
+        "harvest": {
+          "after": 30,
+          "for": 30
         }
-      ]
+      }
+    },
+    {
+      "name": "carrots",
+      "img": "img/crops/carrot.yellow.png",
+      "plantings": {
+        "plant": [
+          ["02-01", "03-20"],
+          ["08-01", "09-15"]
+        ],
+        "harvest": {
+          "after": 75,
+          "for": 30
+        }
+      }
+    },
+    {
+      "name": "arugula",
+      "img": "img/crops/arugula.png",
+      "plantings": {
+        "plant": [
+          ["02-15", "05-01"],
+          ["08-01", "10-01"]
+        ],
+        "harvest": {
+          "after": 30,
+          "for": 15
+        }
+      }
+    },
+    {
+      "name": "lettuce",
+      "img": "img/crops/lettuce.speckled.png",
+      "plantings": {
+        "plant": [
+          ["02-01", "03-15"],
+          ["09-01", "10-01"]
+        ],
+        "harvest": {
+          "after": 70,
+          "for": 15
+        }
+      }
+    },
+    {
+      "name": "peas",
+      "img": "img/crops/peas.png",
+      "plantings": {
+        "plant": [
+          ["02-10", "03-01"]
+        ],
+        "harvest": {
+          "after": 70,
+          "for": 15
+        }
+      }
+    },
+    {
+      "name": "beets",
+      "img": "img/crops/beet.png",
+      "plantings": {
+        "plant": [
+          ["03-01", "04-01"],
+          ["06-01", "08-01"]
+        ],
+        "harvest": {
+          "after": 60,
+          "for": 20
+        }
+      }
+    },
+    {
+      "name": "beans",
+      "img": "img/crops/beans.runner.png",
+      "plantings": {
+        "plant": [
+          ["04-15", "06-01"],
+          ["07-10", "08-01"]
+        ],
+        "harvest": {
+          "after": 60,
+          "for": 15
+        }
+      }
+    },
+    {
+      "name": "cucumber",
+      "img": "img/crops/cucumber.japanese.png",
+      "plantings": {
+        "seedlings": 45,
+        "plant": [
+          ["04-15", "05-15"]
+        ],
+        "harvest": {
+          "after": 60,
+          "for": 30
+        }
+      }
+    },
+    {
+      "name": "eggplant",
+      "img": "img/crops/eggplant.png",
+      "plantings": {
+        "seedlings": 45,
+        "plant": [
+          ["04-15", "05-15"],
+          ["07-01", "07-06"]
+        ],
+        "harvest": {
+          "after": 80,
+          "for": 30
+        }
+      }
+    },
+    {
+      "name": "pepper",
+      "img": "img/crops/pepper.bell.png",
+      "plantings": {
+        "seedlings": 45,
+        "plant": [
+          ["04-15", "06-01"]
+        ],
+        "harvest": {
+          "after": 80,
+          "for": 45
+        }
+      }
+    },
+    {
+      "name": "tomato",
+      "img": "img/crops/tomato.beefsteak.png",
+      "plantings": {
+        "seedlings": 45,
+        "plant": [
+          ["04-15", "05-15"],
+          ["06-01", "08-01"]
+        ],
+        "harvest": {
+          "after": 80,
+          "for": 45
+        }
+      }
+    },
+    {
+      "name": "squash",
+      "img": "img/crops/squash.kuri.png",
+      "plantings": {
+        "plant": [
+          ["04-15", "08-01"]
+        ],
+        "harvest": {
+          "after": 110,
+          "for": 20
+        }
+      }
+    },
+    {
+      "name": "okra",
+      "img": "img/crops/okra.png",
+      "plantings": {
+        "plant": [
+          ["05-01", "06-01"]
+        ],
+        "harvest": {
+          "after": 60,
+          "for": 30
+        }
+      }
     },
     {
       "name": "fava",
       "img": "img/crops/fava.png",
-      "maturation": 160,
-      "plantingType": "seed",
-      "plantings": [
-        {
-          "start": "10-01",
-          "end": "11-01"
+      "plantings": {
+        "plant": [
+          ["10-01", "11-01"]
+        ],
+        "harvest": {
+          "after": 210,
+          "for": 30
         }
-      ]
+      }
     }
   ]
 }

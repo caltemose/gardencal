@@ -1,0 +1,402 @@
+{
+  "location": "Atlanta",
+  "monthlyNotes": [
+    {"month":"jan", "notes": "Plan the garden; Manure/Compost + plow (if not done in fall); Test soil and add lime, sulfur, fertilizer as needed; Order seeds; Plan indoor starter area, assess materials needed"},
+    {"month":"feb", "notes": "Prepare the garden; Plant: carrots, collards, lettuce, mustard, english peas, irish potatoes, radishes, spinach, turnips, rapini; Mid/end of month start seeds: herbs, tomatoes, peppers, cukes"},
+    {"month":"mar", "notes": "Plant #2: turnips, radishes, mustard, spring onions; Thin seedlings if needed; Prep rows for warm-season vegetables planted in April"},
+    {"month":"apr", "notes": "Plant: limas (2 rows for pollination), melons, cukes, eggplant, okra, peppers, squash, tomatoes; Plant tender herbs"},
+    {"month":"may", "notes": "Plant #3: limas, squash; Get mulch for tomatoes, peppers, limas, etc before dry season"},
+    {"month":"jun", "notes": "Harvest & Preserve; Plant sweet potatoes"},
+    {"month":"jul", "notes": "Plan fall garden; Fallow soil; Clean up harvested plants; Plant by July 20: tomatoes, okra, limas, cukes, squash; Water deeply and less often"},
+    {"month":"aug", "notes": "Plant: Irish potatoes, cukes, snap beans; Start: broccoli, cabbage, cauliflower, collards, kale, onions"},
+    {"month":"sep", "notes": "Plant/transplant: beets, broccoli, cabbage, carrots, collards, lettuce, mustard, onions, radishes, spinach, turnips"},
+    {"month":"oct", "notes": "Plant/transplant: beets, broccoli, cabbage, carrots, collards, lettuce, mustard, onions, radishes, spinach, turnips"},
+    {"month":"nov", "notes": "Spread manure and leaves and turn under dirt; Lime if needed; Save leaves; Take inventory and debrief"},
+    {"month":"dec", "notes": "Spread manure and leaves and turn under dirt; Lime if needed; Save leaves; Take inventory and debrief"}
+  ],
+  "crops": [
+
+    {
+      "name": "potatoes",
+      "img": "img/crops/potato.new.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "01-15",
+            "stop": "03-01"
+          },
+          "harvest": {
+            "start": "04-01",
+            "stop": "06-20"
+          }
+        },
+        {
+          "plant": {
+            "start": "08-01",
+            "stop": "08-15"
+          },
+          "harvest": {
+            "start": "10-20",
+            "stop": "12-01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spinach",
+      "img": "img/crops/spinach.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "01-15",
+            "stop": "03-15"
+          },
+          "harvest": {
+            "start": "03-01",
+            "stop": "05-20"
+          }
+        },
+        {
+          "plant": {
+            "start": "09-01",
+            "stop": "10-15"
+          },
+          "harvest": {
+            "start": "10-15",
+            "stop": "12-01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "radish",
+      "img": "img/crops/radish.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "01-25",
+            "stop": "02-15"
+          },
+          "harvest": {
+            "start": "02-25",
+            "stop": "04-15"
+          }
+        },
+        {
+          "plant": {
+            "start": "09-01",
+            "stop": "10-15"
+          },
+          "harvest": {
+            "start": "10-01",
+            "stop": "12-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "carrots",
+      "img": "img/crops/carrot.yellow.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "02-01",
+            "stop": "03-20"
+          },
+          "harvest": {
+            "start": "04-15",
+            "stop": "07-01"
+          }
+        },
+        {
+          "plant": {
+            "start": "08-01",
+            "stop": "09-15"
+          },
+          "harvest": {
+            "start": "10-15",
+            "stop": "12-01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "arugula",
+      "img": "img/crops/arugula.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "02-15",
+            "stop": "05-01"
+          },
+          "harvest": {
+            "start": "03-15",
+            "stop": "06-15"
+          }
+        },
+        {
+          "plant": {
+            "start": "08-01",
+            "stop": "10-01"
+          },
+          "harvest": {
+            "start": "09-15",
+            "stop": "12-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lettuce",
+      "img": "img/crops/lettuce.speckled.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "02-01",
+            "stop": "03-15"
+          },
+          "harvest": {
+            "start": "04-10",
+            "stop": "06-15"
+          }
+        },
+        {
+          "plant": {
+            "start": "09-01",
+            "stop": "10-01"
+          },
+          "harvest": {
+            "start": "11-10",
+            "stop": "12-25"
+          }
+        }
+      ]
+    },
+    {
+      "name": "peas",
+      "img": "img/crops/peas.png",
+      "plantings": [
+        {
+          "plant": { 
+            "start": "02-10", 
+            "stop": "03-01"
+          },
+          "harvest": {
+            "start": "04-20",
+            "stop": "05-25"
+          }
+        }
+      ]
+    },
+    {
+      "name": "beets",
+      "img": "img/crops/beet.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "03-01",
+            "stop": "04-01"
+          },
+          "harvest": {
+            "start": "05-01",
+            "stop": "06-20"
+          }
+        },
+        {
+          "plant": {
+            "start": "06-01",
+            "stop": "08-01"
+          },
+          "harvest": {
+            "start": "07-01",
+            "stop": "10-10"
+          }
+        }
+      ]
+    },
+    {
+      "name": "beans",
+      "img": "img/crops/beans.runner.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "04-15",
+            "stop": "06-01"
+          },
+          "harvest": {
+            "start": "06-15",
+            "stop": "08-15"
+          }
+        },
+        {
+          "plant": {
+            "start": "07-10",
+            "stop": "08-01"
+          },
+          "harvest": {
+            "start": "09-10",
+            "stop": "10-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cucumber",
+      "img": "img/crops/cucumber.japanese.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "02-15",
+            "stop": "03-15"
+          },
+          "transplant": {
+            "start": "04-15",
+            "stop": "05-15"
+          },
+          "harvest": {
+            "start": "06-15",
+            "stop": "08-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "eggplant",
+      "img": "img/crops/eggplant.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "02-15",
+            "stop": "03-15"
+          },
+          "transplant": {
+            "start": "04-15",
+            "stop": "05-15"
+          },
+          "harvest": {
+            "start": "07-01",
+            "stop": "08-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pepper",
+      "img": "img/crops/pepper.bell.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "02-01",
+            "stop": "03-01"
+          },
+          "transplant": {
+            "start": "04-15",
+            "stop": "05-15"
+          },
+          "harvest": {
+            "start": "07-15",
+            "stop": "10-05"
+          }
+        }
+      ]
+    },
+    {
+      "name": "tomato",
+      "img": "img/crops/tomato.beefsteak.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "02-15",
+            "stop": "03-15"
+          },
+          "transplant": {
+            "start": "04-15",
+            "stop": "05-15"
+          },
+          "harvest": {
+            "start": "07-01",
+            "stop": "09-15"
+          }
+        },
+        {
+          "plant": {
+            "start": "04-01",
+            "stop": "06-01"
+          },
+          "transplant": {
+            "start": "06-01",
+            "stop": "08-01"
+          },
+          "harvest": {
+            "start": "08-15",
+            "stop": "10-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "squash",
+      "img": "img/crops/squash.kuri.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "04-15",
+            "stop": "08-01"
+          },
+          "harvest": {
+            "start": "08-15",
+            "stop": "12-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "okra",
+      "img": "img/crops/okra.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "05-01",
+            "stop": "06-01"
+          },
+          "harvest": {
+            "start": "07-01",
+            "stop": "09-01"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fava",
+      "img": "img/crops/fava.png",
+      "plantings": [
+        {
+          "plant": {
+            "start": "10-01",
+            "stop": "11-01"
+          },
+          "harvest": {
+            "start": "05-01",
+            "stop": "06-15"
+          }
+        }
+      ]
+    },
+    {
+      "name": "broccoli",
+      "img": "img/crops/broccoli.png",
+      "plantings": [
+        {
+          "transplant": {
+            "start": "02-15",
+            "stop": "03-15"
+          },
+          "harvest": {
+            "start": "05-01",
+            "stop": "06-15"
+          }
+        }
+      ]
+    }
+  ]
+}
