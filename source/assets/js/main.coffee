@@ -2,7 +2,10 @@ gardencal = (($) ->
   
   jsonPath = "garden-update.json"
 
-  #rem
+  #flag
+  currentPhase = 'all'
+
+  #measurements in rem
   topPad = 6 
   rowHeight = 5
 
@@ -42,9 +45,16 @@ gardencal = (($) ->
     # set the .crops container width so the list items don't wrap
     cropContainer.css('width', data.crops.length*6+'rem')
 
+    # key links
+    $('.key li').click ->
+      gardencal.togglePhase $(this).find('span').attr('class')
+
+
   drawCrop = (data, container) ->
     $('h3 > a', container).click ->
-      gardencal.toggleMe container
+      gardencal.fadeToggleCrop container
+    $('label', container).click ->
+      gardencal.toggleCrop container
 
     #drawPlanting range, container, data for range in data.plantings.plant
     drawPlanting planting, container for planting in data.plantings
@@ -80,9 +90,13 @@ gardencal = (($) ->
     span.data 'start', range.start
     span.data 'end', range.stop
 
+    tipContent = type + ': ' + range.start + ' to ' + range.stop
+    if range.notes
+      tipContent += '<br>' + range.notes
+
     # tooltip
     span.qtip
-      content: type + ': ' + range.start + ' to ' + range.stop
+      content: tipContent
       position:
         my: 'center left'
         at: 'center right'
@@ -91,7 +105,16 @@ gardencal = (($) ->
       hide:
         delay: 0
 
-  toggleAllButMe = (crop) ->
+  fadeToggleThisCrop = (crop) ->
+    #if any crop items are faded
+    if $(cropItems[0]).css('opacity') < 1 or $(cropItems[1]).css('opacity') < 1
+      cropItems.css('opacity', 1)
+    else
+      cropItems.css('opacity', 0.25)
+      $(crop).css('opacity', 1)
+
+  toggleThisCrop = (crop) ->
+    #if all(ish) crop items are visible
     if $(cropItems[0]).is(':visible') and $(cropItems[1]).is(':visible')
       cropItems.hide()
       $(crop).show()
@@ -99,10 +122,23 @@ gardencal = (($) ->
     else
       cropItems.show()
 
+  toggleThisPhase = (phase) ->
+    if currentPhase is 'all'
+      currentPhase = phase
+      cropItems.find('span').hide()
+      cropItems.find('span.' + phase).show()
+    else
+      cropItems.find('span').show()
+      currentPhase = 'all'
+
 
   init: initialize
 
-  toggleMe: toggleAllButMe
+  fadeToggleCrop: fadeToggleThisCrop
+
+  toggleCrop: toggleThisCrop
+
+  togglePhase: toggleThisPhase
 
 )(jQuery)
 $ ->
