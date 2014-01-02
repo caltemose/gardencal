@@ -23,7 +23,8 @@
         {
           "plant": {
             "start": "01-15",
-            "stop": "03-01"
+            "stop": "03-01",
+            "notes": "Plant from bulbs."
           },
           "harvest": {
             "start": "04-01",
@@ -33,7 +34,8 @@
         {
           "plant": {
             "start": "08-01",
-            "stop": "08-15"
+            "stop": "08-15",
+            "notes": "Plant from bulbs."
           },
           "harvest": {
             "start": "10-20",
@@ -535,9 +537,10 @@
       "img": "img/crops/onion.cippolini.png",
       "plantings": [
         {
-          "transplant": {
+          "plant": {
             "start": "01-01",
-            "stop": "03-15"
+            "stop": "03-15",
+            "notes": "Plant from bulbs. Seeds take two years to mature."
           },
           "harvest": {
             "start": "06-01",
