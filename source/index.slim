@@ -39,7 +39,7 @@ html
         small Crop Monthly Info For
         | {{location}}
       
-      <ul>{{#monthlyNotes}}<li>
+      <ul class="monthly-notes">{{#monthlyNotes}}<li class="{{month}}">
           <h3>{{month}}</h3>
           <article>{{notes}}</article>
       </li>{{/monthlyNotes}}</ul>
